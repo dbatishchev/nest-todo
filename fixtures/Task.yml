@@ -1,0 +1,6 @@
+entity: Task
+items:
+  task{1..10}:
+    title: '{{word.adjective}} {{word.noun}}'
+    description: '{{lorem.paragraphs}}'
+    group: '@group*'

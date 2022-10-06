@@ -1,0 +1,5 @@
+entity: Group
+items:
+  group{1..10}:
+    title: '{{word.adjective}} {{word.noun}}'
+    description: '{{lorem.paragraphs}}'

@@ -1,0 +1,14 @@
+entity: User
+items:
+  test1:
+    username: 'test1'
+    firstName: 'test'
+    lastName: 'test'
+    isActive: true
+    password: '123'
+  test2:
+    username: 'test2'
+    firstName: 'test'
+    lastName: 'test'
+    isActive: true
+    password: '123'

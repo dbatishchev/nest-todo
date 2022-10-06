@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+    env_file:
+      - .env
+    command: npm run start:dev
+    ports:
+      - 3000:3000
+  postgres:
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=my_database
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=mysecretpassword
